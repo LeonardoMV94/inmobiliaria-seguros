@@ -1,3 +1,5 @@
+import { propiedades } from "./elementsDOM";
+
 export const propiedades = [
   {
     id: "1",
@@ -49,7 +51,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id04.webp",
     sector: "Providencia",
-    descripcion: "Departamento moderno con 3 habitaciones en el corazón de Providencia.",
+    descripcion:
+      "Departamento moderno con 3 habitaciones en el corazón de Providencia.",
     precio: 7500,
     direccion: "Av. Providencia 1234",
     comuna: "Providencia",
@@ -77,7 +80,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id06.webp",
     sector: "Pudahuel",
-    descripcion: "Terreno para desarrollo industrial con acceso a vías principales.",
+    descripcion:
+      "Terreno para desarrollo industrial con acceso a vías principales.",
     precio: 10000,
     direccion: "Av. Vespucio Norte 789",
     comuna: "Pudahuel",
@@ -91,7 +95,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id07.webp",
     sector: "Santiago Centro",
-    descripcion: "Departamento céntrico con vista panorámica y acceso a transporte.",
+    descripcion:
+      "Departamento céntrico con vista panorámica y acceso a transporte.",
     precio: 5500,
     direccion: "Av. Libertador Bernardo O'Higgins 345",
     comuna: "Santiago",
@@ -119,7 +124,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id09.webp",
     sector: "Curacaví",
-    descripcion: "Amplio terreno en sector rural, ideal para proyecto agrícola.",
+    descripcion:
+      "Amplio terreno en sector rural, ideal para proyecto agrícola.",
     precio: 7500,
     direccion: "Ruta 68 km 40",
     comuna: "Curacaví",
@@ -133,7 +139,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id10.webp",
     sector: "Las Condes",
-    descripcion: "Departamento elegante con acceso a centros comerciales y parques.",
+    descripcion:
+      "Departamento elegante con acceso a centros comerciales y parques.",
     precio: 9000,
     direccion: "Av. Apoquindo 1234",
     comuna: "Las Condes",
@@ -161,7 +168,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id12.webp",
     sector: "Lo Barnechea",
-    descripcion: "Terreno con espectacular vista a la cordillera y cercanía a colegios.",
+    descripcion:
+      "Terreno con espectacular vista a la cordillera y cercanía a colegios.",
     precio: 8200,
     direccion: "Av. El Rodeo 678",
     comuna: "Lo Barnechea",
@@ -175,7 +183,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id13.webp",
     sector: "Recoleta",
-    descripcion: "Departamento funcional con buena distribución y cercanía a servicios.",
+    descripcion:
+      "Departamento funcional con buena distribución y cercanía a servicios.",
     precio: 4700,
     direccion: "Calle Zenteno 234",
     comuna: "Recoleta",
@@ -203,7 +212,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id15.webp",
     sector: "San Bernardo",
-    descripcion: "Terreno ideal para proyectos residenciales, cerca de servicios.",
+    descripcion:
+      "Terreno ideal para proyectos residenciales, cerca de servicios.",
     precio: 5500,
     direccion: "Calle Balmaceda 890",
     comuna: "San Bernardo",
@@ -287,7 +297,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id21.webp",
     sector: "Quinta Normal",
-    descripcion: "Departamento con acceso a áreas comunes y cerca de transporte.",
+    descripcion:
+      "Departamento con acceso a áreas comunes y cerca de transporte.",
     precio: 4800,
     direccion: "Calle Santiago 789",
     comuna: "Quinta Normal",
@@ -315,7 +326,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id23.webp",
     sector: "Lo Prado",
-    descripcion: "Terreno en sector en desarrollo con gran potencial para construir.",
+    descripcion:
+      "Terreno en sector en desarrollo con gran potencial para construir.",
     precio: 6500,
     direccion: "Calle Valenzuela 567",
     comuna: "Lo Prado",
@@ -329,7 +341,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id24.webp",
     sector: "San Miguel",
-    descripcion: "Departamento con acceso a transporte público y centros comerciales.",
+    descripcion:
+      "Departamento con acceso a transporte público y centros comerciales.",
     precio: 4200,
     direccion: "Calle Bascuñán 678",
     comuna: "San Miguel",
@@ -343,7 +356,8 @@ export const propiedades = [
     tipo: "Casa",
     urlImagen: "assets/img/propiedades/f_id25.webp",
     sector: "Maipú",
-    descripcion: "Casa con grandes espacios interiores y exteriores, ideal para familias.",
+    descripcion:
+      "Casa con grandes espacios interiores y exteriores, ideal para familias.",
     precio: 7000,
     direccion: "Calle Pajaritos 890",
     comuna: "Maipú",
@@ -357,7 +371,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id26.webp",
     sector: "Vitacura",
-    descripcion: "Terreno en exclusivo sector con vistas a la ciudad y cercanía a áreas verdes.",
+    descripcion:
+      "Terreno en exclusivo sector con vistas a la ciudad y cercanía a áreas verdes.",
     precio: 9000,
     direccion: "Calle Los Presidentes 345",
     comuna: "Vitacura",
@@ -371,7 +386,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id27.webp",
     sector: "Estación Central",
-    descripcion: "Departamento cercano a estación de metro y principales avenidas.",
+    descripcion:
+      "Departamento cercano a estación de metro y principales avenidas.",
     precio: 3900,
     direccion: "Calle Figueroa 123",
     comuna: "Estación Central",
@@ -385,7 +401,8 @@ export const propiedades = [
     tipo: "Casa",
     urlImagen: "assets/img/propiedades/f_id28.webp",
     sector: "San Joaquín",
-    descripcion: "Casa con jardín y cerca de universidades y centros educativos.",
+    descripcion:
+      "Casa con jardín y cerca de universidades y centros educativos.",
     precio: 5800,
     direccion: "Calle Gran Avenida 456",
     comuna: "San Joaquín",
@@ -399,7 +416,8 @@ export const propiedades = [
     tipo: "Terreno",
     urlImagen: "assets/img/propiedades/f_id29.webp",
     sector: "Renca",
-    descripcion: "Terreno en zona de expansión urbana, ideal para desarrollo residencial.",
+    descripcion:
+      "Terreno en zona de expansión urbana, ideal para desarrollo residencial.",
     precio: 7200,
     direccion: "Calle Luis Thayer Ojeda 789",
     comuna: "Renca",
@@ -413,7 +431,8 @@ export const propiedades = [
     tipo: "Departamento",
     urlImagen: "assets/img/propiedades/f_id30.webp",
     sector: "La Florida",
-    descripcion: "Departamento en edificio nuevo con amenities y buena conectividad.",
+    descripcion:
+      "Departamento en edificio nuevo con amenities y buena conectividad.",
     precio: 5300,
     direccion: "Calle Tobalaba 678",
     comuna: "La Florida",
@@ -422,5 +441,25 @@ export const propiedades = [
     banos: 2,
     estacionamiento: true,
   },
-
 ];
+
+export const generateHTML = (propiedades) => {
+
+  propiedades.array.forEach((propiedad, index) => {
+    const template = `
+                  <div class="item">
+                    <div class="img">
+                        <img alt="casa" src="${propiedad.urlImagen}">
+                    </div>
+                    <div class="content">
+                        <div class="title">Product name 1</div>
+                        <div class="des">
+                        ${propiedad.descripcion}
+                        </div>
+                        <div class="price"></div>
+                        <button class="add">Cotizar</button>
+                    </div>
+                  `;
+    propiedades.innerHTML += template
+  });
+};
