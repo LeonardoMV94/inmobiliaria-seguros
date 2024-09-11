@@ -1,6 +1,6 @@
-import { propiedades } from "./elementsDOM";
+import { propiedadesElement } from "./elementsDOM.js";
 
-export const propiedades = [
+export const listaPropiedades = [
   {
     id: "1",
     tipo: "Departamento",
@@ -445,21 +445,23 @@ export const propiedades = [
 
 export const generateHTML = (propiedades) => {
 
-  propiedades.array.forEach((propiedad, index) => {
+  listaPropiedades.forEach((propiedad, index) => {
     const template = `
                   <div class="item">
                     <div class="img">
                         <img alt="casa" src="${propiedad.urlImagen}">
                     </div>
                     <div class="content">
-                        <div class="title">Product name 1</div>
+                        <div class="title">${propiedad.tipo}</div>
                         <div class="des">
                         ${propiedad.descripcion}
                         </div>
-                        <div class="price"></div>
+                        <div class="price">UF ${propiedad.precio}</div>
                         <button class="add">Cotizar</button>
                     </div>
                   `;
-    propiedades.innerHTML += template
+    propiedadesElement.innerHTML += template
   });
 };
+
+generateHTML(listaPropiedades)

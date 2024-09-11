@@ -1,6 +1,6 @@
-import { propiedades } from "./propiedad.js";
+import { listaPropiedades } from "./propiedad.js";
 
-console.log(propiedades);
+console.log(listaPropiedades);
 
 // https://www.freecodecamp.org/espanol/news/prototipo-javascript-expliacado-con-ejemplos/
 function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion, comuna, region, habitaciones, banos, estacionamiento}){

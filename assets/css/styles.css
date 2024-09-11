@@ -91,13 +91,13 @@
 }
 
 /* desde aca comienza las propiedades de las card */
-@scope ('#body-propiedades') {
-  body {
+@scope(#body-propiedades) { */
+  /* body {
     background-image: linear-gradient(to top right, #cc64a2, #5c3075);
     min-height: 100vh;
     line-height: 20px;
     font-family: monospace;
-  }
+  } */
   .container {
     width: 900px;
     margin: 150px auto 0;
@@ -126,7 +126,7 @@
     padding: 50px 30px;
     transform: translate(0, -50px);
     backdrop-filter: blur(20px);
-    color: #fff;
+    color: black;
   }
   .title {
     font-size: x-large;
