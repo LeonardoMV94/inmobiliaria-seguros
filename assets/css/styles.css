@@ -90,7 +90,6 @@
   display: none;
 }
 
-<<<<<<< HEAD
 /* desde aca comienza las propiedades de las card */
 @scope(#body-propiedades) { */
   /* body {
@@ -168,7 +167,6 @@
     background-color: #b192ef;
     color: #fff;
   }
-=======
 /*Formulario*/
 
 .formulario {
@@ -178,7 +176,6 @@
     background-color: #e6dcd0;
     max-width: 800px;
     margin: 0 auto;
->>>>>>> 3d3e4ce558b7cb5541e7c3613dfe061af3cb5c77
 }
 
 
