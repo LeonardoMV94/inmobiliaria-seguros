@@ -64,23 +64,25 @@
 
 
     <!-- Formulario -->
-<section class="form-container">
+    <section class="container card formulario my-4 p-4" id="formulario">
+        <h1><strong>¡Cotiza con nosotros!</strong></h1>
+        
     <form class="row g-3">
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Nombre</label>
-            <input type="nombre" class="form-control" id="inputEmail4">
+            <input type="nombre" class="form-control" id="inputEmail4" required>
         </div>
         <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Apellido</label>
-            <input type="apellido" class="form-control" id="inputPassword4">
+            <input type="apellido" class="form-control" id="inputPassword4" required>
         </div>
         <div class="col-md-6">
             <label for="inputAddress" class="form-label">Rut</label>
-            <input type="number" class="form-control" id="inputAddress" placeholder="12.345.678-9">
+            <input type="number" class="form-control" id="inputAddress" placeholder="12345678-9" required>
         </div>
         <div class="col-md-6">
             <label for="inputState" class="form-label">Renta</label>
-            <select id="inputState" class="form-select">
+            <select id="inputState" class="form-select" required>
                 <option selected>-Por favor, elige una opción-</option>
                 <option>Menor a $1.000.000</option>
                 <option>Entre $1.000.000 a $1.500.000</option>
@@ -92,15 +94,15 @@
         </div>
         <div class="col-md-6">
             <label for="inputAddress" class="form-label">Teléfono</label>
-            <input type="number" class="form-control" id="inputAddress">
+            <input type="number" class="form-control" id="inputAddress" required>
         </div>
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="mail" class="form-control" id="inputEmail4" placeholder="correo@email.com">
+            <input type="mail" class="form-control" id="inputEmail4" placeholder="correo@email.com" required>
         </div>
         <div class="col-md-6">
             <label for="inputState" class="form-label">Comuna</label>
-            <select id="inputState" class="form-select">
+            <select id="inputState" class="form-select" required>
                 <option selected>-Comuna-</option>
                 <option>Tchicureo</option>
                 <option>Oe Pucón</option>
@@ -117,7 +119,7 @@
             </div>
         </div>
         <div class="col-12">
-            <button type="submit" class="btn btn-dark">¡Cotiza con nosotros!</button>
+            <button type="submit" class="btn btn-dark">Enviar</button>
         </div>
     </form>
 </section>
