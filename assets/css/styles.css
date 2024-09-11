@@ -91,7 +91,8 @@
 }
 
 /* desde aca comienza las propiedades de las card */
-@scope(#body-propiedades) { */
+@scope (#body-propiedades) {
+  
   /* body {
     background-image: linear-gradient(to top right, #cc64a2, #5c3075);
     min-height: 100vh;
@@ -167,15 +168,14 @@
     background-color: #b192ef;
     color: #fff;
   }
-/*Formulario*/
+  /*Formulario*/
 
-.formulario {
+  .formulario {
     border: 2px solid rgb(5, 12, 1);
     padding: 20px;
     border-radius: 10px;
     background-color: #e6dcd0;
     max-width: 800px;
     margin: 0 auto;
+  }
 }
-
-
