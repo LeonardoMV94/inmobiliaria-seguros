@@ -28,3 +28,4 @@ Propiedad.prototype.getdescripcion = function() {
 Propiedad.prototype.getTipo = function(){
     return this.tipo
 }
+

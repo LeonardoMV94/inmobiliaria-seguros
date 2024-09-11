@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/logo1.jpeg" alt="Logo" class="logo-img">
+                <img src="assets/img/logo1.jpeg" alt="Logo" class="logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,19 +25,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cotizador</a>
+                        <a class="nav-link" href="cotizador.html">Cotizador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto"> 
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#" target="_blank">
                             <i class="fab fa-facebook-f"></i>
@@ -76,36 +76,38 @@
     </section>
 
     <!-- Carrousel de propiedades destacadas -->
+     <!-- https://www.socovesa.cl/ -->
     <section>
-        <h3>Conoce todos<br><span>nuestros proyectos</span></h3>
+        <h3>Conoce nuestros<br><span>mejores proyectos</span></h3>
         <div id="carousel-proyectos" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carrousel-proyectos" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carrousel-proyectos" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carrousel-proyectos" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <!-- CARDS -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h3></h3>
-                    <img src="..." class="d-block w-100" alt="propiedad1">
+                <div class="img-coriusel-propiedades carousel-item active">
+                    <h3>Valparaiso</h3>
+                    <!-- <img src="./assets/img/propiedades/f_id03.webp" class="d-block w-100" alt="propiedad1"> -->
                     <div class="overlay">
                         <h6>Viña del mar</h6>
-                        <p></p>
+                        <p>Ubicado en Viña del Mar, con acceso fácil a servicios, comercios y playas, ideal para
+                            construir la propiedad de tus sueños con tranquilidad y comodidad</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="propiedad2">
+                <div class="img-coriusel-propiedades carousel-item">
+                    <img src="./assets/img/propiedades/f_id03.webp" class="d-block w-100" alt="propiedad2">
                     <div class="overlay">
                         <h3></h3>
                         <p></p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="propiedad3">
+                <div class="img-coriusel-propiedades carousel-item">
+                    <img src="./assets/img/propiedades/f_id03.webp" class="d-block w-100" alt="propiedad3">
                     <div class="overlay">
                         <h3></h3>
                         <p></p>
@@ -125,47 +127,59 @@
         </div>
     </section>
 
+
     <!-- Footer -->
-   
-    <footer>
-        <div class="container-fluid border-top  text-black p-3">
+    <footer class="container-fluid border-top bg-light text-black p-4">
+        <div class="row justify-content-center text-center">
 
-            <div class="row justify-content-around text-center text-md-start">
+            <!-- Sección del logo y descripción -->
+            <div class="col-12 col-md-3 mb-4">
+                <h1 class="fw-bold text-center">ELEVEN</h1>
+                <h4 class="fw-light text-black text-center">Aseguradora de inmobiliaria</h4>
+                <hr>
+            </div>
 
-                <div class="donaflor-cont col-md-3 text-center">
-                    <h1 class="donaflor fw-bold mt-3">ELEVEN</h1>
-                    <h4 class="fw-light text-black">Aseguradora de inmobiliaria</h4>
-              
+            <!-- Sección de información adicional -->
+            <div class="col-12 col-md-4 mb-4">
+                <ul class="list-unstyled text-center">
+                    <li class="fw-bold my-2">
+                        La inversión en bienes raíces, incluso en una escala muy pequeña, sigue siendo un medio probado
+                        y verdadero de construir el flujo de efectivo y la riqueza de un individuo.
+                    </li>
                     <hr>
-                </div>
+                    <li>
+                        <a href="#" class="text-decoration-none fw-lighter fs-6 text-dark d-block py-2">
+                            <i class="fa-solid fa-arrow-right me-2"></i>Seguros Disponibles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none fw-lighter fs-6 text-dark d-block py-2">
+                            <i class="fa-solid fa-arrow-right me-2"></i>Cotiza Aquí!
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="col-lg-3">
-                    <ul class="list-unstyled">
-                        <li class="fw-bold my-2">La inversión en bienes raíces, incluso en una escala muy pequeña, sigue
-                            siendo un medio probado y verdadero de construir el flujo de efectivo y la riqueza de un
-                            individuo</li>
-                        <hr>
-                        <li><a href="" class="text-decoration-none fw-lighter fs-6 text"><i
-                                    class="fa-solid fa-arrow-right text-dark"></i>Seguros Disponibles</a></li>
-                        <li><a href=""
-                                class="text-decoration-none fw-lighter fs-6 text pt-2 "><i
-                                    class="fa-solid fa-arrow-right text-dark"></i>Cotiza Aquí!</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 pt-2">
-                    <h6 class="fw-bold my-2">Redes Sociales</h6>
-                    <hr>
-                    <div class="list-unstyled ">
-                        <a href="#"><i class="img-footer fa-brands fa-facebook me-4 fa-1x"></i></a>
-                        <a href="#"><i class="img-footer fa-brands fa-whatsapp me-4 fa-1x"></i></a>
-                        <a href="#"><i class="img-footer fa-brands fa-instagram me-4 fa-1x"></i></a>
-                    </div>
+            <!-- Sección de redes sociales -->
+            <div class="col-12 col-md-3">
+                <h6 class="fw-bold my-2 text-center">Redes Sociales</h6>
+                <hr>
+                <div class="d-flex justify-content-center">
+                    <a href="#" aria-label="Facebook" class="me-4"><i
+                            class="fa-brands fa-facebook fa-2x text-dark"></i></a>
+                    <a href="#" aria-label="WhatsApp" class="me-4"><i
+                            class="fa-brands fa-whatsapp fa-2x text-dark"></i></a>
+                    <a href="#" aria-label="Instagram" class="me-4"><i
+                            class="fa-brands fa-instagram fa-2x text-dark"></i></a>
                 </div>
             </div>
+
         </div>
     </footer>
 
+
+
+    <!-- importaciones js -->
     <script type="module" src="assets/js/principal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
