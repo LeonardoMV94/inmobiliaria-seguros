@@ -8,18 +8,18 @@ En este reto debe aplicar la creación de prototipos.
 
 ### Colaboradores
 
-- estilos boostrap css -> todos por cada componente
-- arreglo propiedades -> jose rejas
-- card de propiedades -> Esteban Eduardo
-- filtro de propiedades -> leo
-- maquetar carrousel de propiedades -> Nico
-- maquetar navbar -> Francisco
-- maquetar contacto -> Simone
-- maquetar footer -> Yanira
+- [ ] estilos boostrap css -> todos por cada componente
+- [ ] arreglo propiedades -> jose rejas
+- [ ] card de propiedades -> Esteban Eduardo
+- [ ] filtro de propiedades -> leo
+- [ ] maquetar carrousel de propiedades -> Nico
+- [ ] maquetar navbar -> Francisco
+- [ ] maquetar contacto -> Simone
+- [ ] maquetar footer -> Yanira
 
 ### comandos para subir cambios
 ```bash
-git clone https://github.com/LeonardoMV94/dona-flor-18-sedtiembre.git
+git clone https://github.com/LeonardoMV94/inmobiliaria-seguros.git
 git checkout -b tu-rama # primero crea tu rama
 # ... realiza tus cambios ...
 git add . # agrega los archivos al rastreo de git
