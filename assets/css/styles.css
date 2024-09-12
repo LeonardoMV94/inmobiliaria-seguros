@@ -2,8 +2,8 @@
 
 /*Estilo Nav*/
 
-.navbar {
-  background-color: #1e2a38; 
+.navbar { 
+  background-color: #924d2d; 
   padding: 15px;
   border-radius: 8px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -28,13 +28,10 @@
   transition: color 0.3s ease;
 }
 
-
-.social-icons .nav-link:hover {
-  color: #007bff; 
-}
 .navbar-nav .nav-item:last-child {
   margin-right: 0;
 }
+
 .navbar-brand {
   color: black; 
   font-size: 22px;
@@ -46,7 +43,7 @@
 
 
 .navbar-nav .nav-link {
-  color: black; 
+  color: rgb(255, 255, 255); 
   font-size: 18px;
   padding: 10px 15px;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -55,12 +52,10 @@
 }
 
 
-.navbar-nav .nav-link:hover {
-  background-color:  #28a745; 
+.navbar-nav .nav-link:hover { 
+  background-color: #5c2207;
   color: #ffffff;
-  transform: translateY(-5px); 
-background-color: #28a745;
-  
+  transform: translateY(-5px);  
 }
 
 /* Enlace activo */
@@ -68,12 +63,6 @@ background-color: #28a745;
   color: black;
   
 }
-
-
-.navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.5); 
-}
-
 
 .navbar-toggler {
   border: none;
@@ -89,37 +78,44 @@ background-color: #28a745;
 }
 
 
-.navbar-toggler:hover .navbar-toggler-icon {
-  background-color: #007bff; 
-}
-
-
 .navbar-nav .btn-success {
 transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-nav .btn-success:hover {
 transform: translateY(-5px); 
-background-color: #28a745;
+background-color: #924d2d;
 }
 
 .modal-header {
-background-color: #1e2a38; 
+background-color: #924d2d; 
 color: white;
 }
 
 .modal-footer .btn-success {
-background-color: #28a745;
+background-color: #924d2d;
 transition: background-color 0.3s ease;
 }
 
 .modal-footer .btn-success:hover {
-background-color: #218838;
+background-color: #924d2d;
 }
 
 .modal-body input {
 margin-bottom: 10px;
 }
+
+
+
+/* Estilo Body */
+
+body {
+  background-color:  #ffddb5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 
 
 /* Estilos carrousel de propiedades */
@@ -175,12 +171,19 @@ margin-bottom: 10px;
   height: 100%;
 }
 
-#carousel-propiedades .card-title{
+#carousel-propiedades .card-title {
   font-size: 1.625rem;
   line-height: 1.2;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0; 
+}
+
+ /* PAgina Cotizador */
+
+ #img_cotizador {
+  width: 4rem;
+  height: auto; /* Corregido */
   text-shadow: 2px 2px rgba(51, 51, 51, .25);
 }
 
@@ -231,72 +234,104 @@ position: absolute;
     font-family: monospace;
   } 
   .container {
-    width: 900px;
-    margin: 150px auto 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
   .list {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    column-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
   }
-  .item .img img {
-    height: 180px;
-    transition: 0.5s;
-    border-radius: 5%;
+  .item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .item:hover {
+    transform: translateY(-5px);
   }
   .item .img {
-    background-image: linear-gradient(to top right, #d89cd1, #d499d4);
+    background-image: linear-gradient(to top right, #c0783d, #d499d4);
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+  }
+  .item .img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 180px;
+    transition: 0.5s;
+    border-radius: 5%;
   }
   .item .content {
     background-color: #ffffff24;
-    border-radius: 30px;
-    padding: 50px 30px;
-    transform: translate(0, -50px);
-    backdrop-filter: blur(20px);
-    color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
   .title {
-    font-size: x-large;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
   }
   .item .content .des {
     opacity: 0.7;
-    margin: 10px 0;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
   .item .content .price {
-    font-size: large;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
   }
   .item .content .add {
     background-color: #b192ef;
+    padding: 10px 20px;
+    background-color: #924d2d;
     padding: 20px;
     color: #fff;
-    width: 100%;
     border: none;
     border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+  }
+  .item .content .add:hover {
+    background-color: #9a7de0;
   }
   .item:hover img {
-    transform: translate(0, -50px);
+    transform: scale(1.05);
   }
+  /* Estilos del paginador */
   .listPage {
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
     list-style: none;
   }
   .listPage li {
     background-color: #ffffffbd;
-    padding: 20px;
+    padding: 10px 15px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 5px;
     cursor: pointer;
+    border-radius: 5px;
   }
   .listPage .active {
     background-color: #b192ef;
+    background-color: #924d2d;
     border-radius: 50%;
     color: #fff;
   }
@@ -307,7 +342,41 @@ position: absolute;
   border: 2px solid rgb(5, 12, 1);
   padding: 20px;
   border-radius: 10px;
-  background-color: #e6dcd0;
+  background-image: linear-gradient(to top right, #c0783d, #d499d4);
   max-width: 800px;
   margin: 0 auto;
 }
+
+
+/* Footer */
+
+.footer-custom {
+  background-color: #924d2d; /* Fondo color */
+  color: rgb(20, 20, 20); /* Texto en blanco */
+}
+
+.footer-custom a {
+  color: rgb(27, 26, 26); /* Cambiar el color de los enlaces a blanco */
+}
+
+.footer-custom a:hover {
+  color: #d499d4; /* Color hover de los enlaces */
+}
+
+.footer-custom hr {
+  border-color: rgb(12, 11, 11); /* Color blanco para los hr */
+}
+
+.btn-scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Ocultarlo por defecto */
+  z-index: 1000;
+}
+
+/* Mostrar el botón cuando se hace scroll */
+.btn-scroll-to-top.show {
+  display: block;
+}
+

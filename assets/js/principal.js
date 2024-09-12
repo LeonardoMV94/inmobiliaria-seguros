@@ -1,6 +1,7 @@
-import { listaPropiedades } from "./propiedad.js";
+import { listaPropiedades, generateHTML } from "./propiedad.js";
+import { initPagination } from './paginador.js'
 
-console.log(listaPropiedades);
+//console.log(listaPropiedades);
 
 // https://www.freecodecamp.org/espanol/news/prototipo-javascript-expliacado-con-ejemplos/
 function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion, comuna, region, habitaciones, banos, estacionamiento}){
@@ -30,5 +31,23 @@ Propiedad.prototype.getTipo = function(){
     return this.tipo
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  generateHTML(listaPropiedades)
+  initPagination()
+})
 
+
+
+document.addEventListener('scroll', function() {
+    const scrollToTopButton = document.querySelector('.btn-scroll-to-top');
+    if (window.scrollY > 300) {
+        scrollToTopButton.classList.add('show');
+    } else {
+        scrollToTopButton.classList.remove('show');
+    }
+});
+
+window.scrollToTopSimone = function scrollToTopSimone() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
