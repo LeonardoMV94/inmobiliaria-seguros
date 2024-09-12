@@ -92,11 +92,12 @@
 
 /* desde aca comienza las propiedades de las card */
 @scope (#body-propiedades) {
-  /* body {
+   /*body {
     background-image: linear-gradient(to top right, #cc64a2, #5c3075);
     min-height: 100vh;
     line-height: 20px;
     font-family: monospace;
+
   } */
   .container {
     width: 900px;

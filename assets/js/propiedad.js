@@ -457,11 +457,15 @@ export const generateHTML = (propiedades) => {
                         ${propiedad.descripcion}
                         </div>
                         <div class="price">UF ${propiedad.precio}</div>
-                        <button class="add">Cotizar</button>
+                        <a href="cotizador.html?propiedad-id=${propiedad.id}">
+                          <button class="add">
+                            Cotizador
+                          </button>
+                        </a>
                     </div>
                   `;
     propiedadesElement.innerHTML += template
   });
 };
 
-generateHTML(listaPropiedades)
+

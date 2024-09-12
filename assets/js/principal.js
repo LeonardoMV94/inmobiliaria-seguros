@@ -1,4 +1,4 @@
-import { listaPropiedades } from "./propiedad.js";
+import { listaPropiedades, generateHTML } from "./propiedad.js";
 
 console.log(listaPropiedades);
 
@@ -30,5 +30,7 @@ Propiedad.prototype.getTipo = function(){
     return this.tipo
 }
 
-
+document.addEventListener('DOMContentLoaded', () => {
+    generateHTML(listaPropiedades)
+})
 
