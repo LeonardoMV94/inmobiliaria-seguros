@@ -208,7 +208,6 @@ position: absolute;
   right: 200px;
  }
 
-
 .cont-carousel{
   margin-bottom: 20px;
 }
@@ -379,3 +378,16 @@ position: absolute;
   display: block;
 }
 
+/* card-Cotizador */
+.btn-naranja-500 {
+  background-color: #924d2c;
+  border-color: #924d2c;
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-naranja-500:hover {
+  background-color: #633018;
+  border-color: #633018;
+  color: #fff;
+}
