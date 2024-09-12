@@ -17,7 +17,7 @@ if(propiedadID == '0'){
     
     //console.log(propiedad)
     //idTest.innerHTML = JSON.stringify(propiedad) 
-    idTest.innerHTML = `<div class="card mb-3" style="width: 32rem;">
+    idTest.innerHTML = `<div class="card mb-3 p-4" style="width: 32rem;">
                 <img id="img_cotizador" src="${propiedad.urlImagen}" class="card-img-top" alt="${propiedad.comuna}, ${propiedad.region}">
                 <div class="card-body">
                   <h5 class="card-title">${propiedad.direccion}, ${propiedad.comuna}, ${propiedad.region}</h5>

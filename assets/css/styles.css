@@ -182,7 +182,7 @@ body {
  /* PAgina Cotizador */
 
  #img_cotizador {
-  width: 4rem;
+  /* width: 4rem; */
   height: auto; /* Corregido */
   text-shadow: 2px 2px rgba(51, 51, 51, .25);
 }
