@@ -301,7 +301,7 @@ position: absolute;
     align-self: flex-start;
   }
   .item .content .add:hover {
-    background-color: #9a7de0;
+    background-color: #ffddb5;
   }
   .item:hover img {
     transform: scale(1.05);
@@ -327,6 +327,8 @@ position: absolute;
     color: #fff;
   }
 }
+
+
 /*Formulario*/
 
 .formulario {
