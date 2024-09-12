@@ -1,6 +1,7 @@
 import { listaPropiedades, generateHTML } from "./propiedad.js";
+import { initPagination } from './paginador.js'
 
-console.log(listaPropiedades);
+//console.log(listaPropiedades);
 
 // https://www.freecodecamp.org/espanol/news/prototipo-javascript-expliacado-con-ejemplos/
 function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion, comuna, region, habitaciones, banos, estacionamiento}){
@@ -31,6 +32,7 @@ Propiedad.prototype.getTipo = function(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    generateHTML(listaPropiedades)
+  generateHTML(listaPropiedades)
+  initPagination()
 })
 
