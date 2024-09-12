@@ -2,7 +2,7 @@
 
 /*Estilo Nav*/
 .navbar {
-  background-color: #1e2a38;
+  background-color: #924d2d; 
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -26,9 +26,6 @@
   transition: color 0.3s ease;
 }
 
-.social-icons .nav-link:hover {
-  color: #007bff;
-}
 .navbar-nav .nav-item:last-child {
   margin-right: 0;
 }
@@ -51,7 +48,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #28a745;
+  background-color: #5c2207;
   color: #ffffff;
 }
 
@@ -80,6 +77,18 @@
 .navbar-toggler:hover .navbar-toggler-icon {
   background-color: #007bff;
 }
+
+
+/* Estilo Body */
+
+body {
+  background-color:  #ffddb5;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
 
 /* Estilos carrousel de propiedades */
 
@@ -204,7 +213,7 @@ position: absolute;
     border-radius: 5%;
   }
   .item .img {
-    background-image: linear-gradient(to top right, #d89cd1, #d499d4);
+    background-image: linear-gradient(to top right, #c0783d, #d499d4);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -232,7 +241,7 @@ position: absolute;
     margin-bottom: 10px;
   }
   .item .content .add {
-    background-color: #b192ef;
+    background-color: #924d2d;
     padding: 20px;
     color: #fff;
     width: 100%;
@@ -255,7 +264,7 @@ position: absolute;
     cursor: pointer;
   }
   .listPage .active {
-    background-color: #b192ef;
+    background-color: #924d2d;
     border-radius: 50%;
     color: #fff;
   }
@@ -266,7 +275,25 @@ position: absolute;
   border: 2px solid rgb(5, 12, 1);
   padding: 20px;
   border-radius: 10px;
-  background-color: #e6dcd0;
+  background-image: linear-gradient(to top right, #c0783d, #d499d4);
   max-width: 800px;
   margin: 0 auto;
 }
+
+.footer-custom {
+  background-color: #924d2d; /* Fondo color */
+  color: rgb(17, 17, 17); /* Texto en blanco */
+}
+
+.footer-custom a {
+  color: rgb(15, 15, 15); /* Cambiar el color de los enlaces a blanco */
+}
+
+.footer-custom a:hover {
+  color: #d499d4; /* Color hover de los enlaces */
+}
+
+.footer-custom hr {
+  border-color: rgb(10, 10, 10); /* Color blanco para los hr */
+}
+
