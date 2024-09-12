@@ -282,11 +282,11 @@ position: absolute;
 
 .footer-custom {
   background-color: #924d2d; /* Fondo color */
-  color: rgb(17, 17, 17); /* Texto en blanco */
+  color: white; /* Texto en blanco */
 }
 
 .footer-custom a {
-  color: rgb(15, 15, 15); /* Cambiar el color de los enlaces a blanco */
+  color: white; /* Cambiar el color de los enlaces a blanco */
 }
 
 .footer-custom a:hover {
@@ -294,6 +294,6 @@ position: absolute;
 }
 
 .footer-custom hr {
-  border-color: rgb(10, 10, 10); /* Color blanco para los hr */
+  border-color: rgb(12, 11, 11); /* Color blanco para los hr */
 }
 
