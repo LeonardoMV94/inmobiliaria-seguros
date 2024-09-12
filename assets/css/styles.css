@@ -31,6 +31,7 @@
 .navbar-nav .nav-item:last-child {
   margin-right: 0;
 }
+
 .navbar-brand {
   color: black; 
   font-size: 22px;
@@ -42,7 +43,7 @@
 
 
 .navbar-nav .nav-link {
-  color: black; 
+  color: rgb(255, 255, 255); 
   font-size: 18px;
   padding: 10px 15px;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -63,12 +64,6 @@
   
 }
 
-
-.navbar-nav .nav-link.disabled {
-  color: rgba(255, 255, 255, 0.5); 
-}
-
-
 .navbar-toggler {
   border: none;
 }
@@ -80,11 +75,6 @@
   display: block;
   margin: 5px auto;
   transition: background-color 0.3s ease;
-}
-
-
-.navbar-toggler:hover .navbar-toggler-icon {
-  background-color: #007bff; 
 }
 
 
