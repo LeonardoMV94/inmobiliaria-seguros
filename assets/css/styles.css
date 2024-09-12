@@ -272,6 +272,7 @@ position: absolute;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: space-between; /* Añadimos esta línea */
   }
   .title {
     font-size: 1.25rem;
@@ -293,6 +294,11 @@ position: absolute;
     letter-spacing: 1px;
     margin-bottom: 15px;
   }
+  .item .content a {
+    margin-top: auto; /* Añadimos esta línea */
+    align-self: flex-start; /* Añadimos esta línea */
+  }
+  
   .item .content .add {
     background-color: #b192ef;
     padding: 10px 20px;
@@ -304,6 +310,7 @@ position: absolute;
     cursor: pointer;
     transition: background-color 0.3s;
     align-self: flex-start;
+    margin-top: auto; /* Añadimos esta línea */
   }
   .item .content .add:hover {
     background-color: #ffddb5;

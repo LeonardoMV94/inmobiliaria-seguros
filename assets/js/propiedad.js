@@ -457,8 +457,8 @@ export const generateHTML = (propiedades) => {
                         ${propiedad.descripcion}
                         </div>
                         <div class="price">UF ${propiedad.precio}</div>
-                        <a href="cotizador.html?propiedad-id=${propiedad.id}">
-                          <button class="add">
+                        <a class="" href="cotizador.html?propiedad-id=${propiedad.id}">
+                          <button class="add ">
                             Cotizador
                           </button>
                         </a>
