@@ -182,7 +182,7 @@ body {
  /* PAgina Cotizador */
 
  #img_cotizador {
-  width: 4rem;
+  /* width: 4rem; */
   height: auto; /* Corregido */
   text-shadow: 2px 2px rgba(51, 51, 51, .25);
 }
@@ -221,9 +221,6 @@ position: absolute;
   padding-left: 200px;
   margin-bottom: 50px;
 }
-
-
-
 
 /* desde aca comienza las propiedades de las card */
 @scope (#body-propiedades) {
@@ -310,7 +307,7 @@ position: absolute;
     align-self: flex-start;
   }
   .item .content .add:hover {
-    background-color: #9a7de0;
+    background-color: #ffddb5;
   }
   .item:hover img {
     transform: scale(1.05);
@@ -336,6 +333,8 @@ position: absolute;
     color: #fff;
   }
 }
+
+
 /*Formulario*/
 
 .formulario {
