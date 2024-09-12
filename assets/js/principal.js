@@ -36,3 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
   initPagination()
 })
 
+
+
+document.addEventListener('scroll', function() {
+    const scrollToTopButton = document.querySelector('.btn-scroll-to-top');
+    if (window.scrollY > 300) {
+        scrollToTopButton.classList.add('show');
+    } else {
+        scrollToTopButton.classList.remove('show');
+    }
+});
+
+window.scrollToTopSimone = function scrollToTopSimone() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
