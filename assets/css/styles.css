@@ -227,9 +227,6 @@ position: absolute;
   margin-bottom: 50px;
 }
 
-
-
-
 /* desde aca comienza las propiedades de las card */
 @scope (#body-propiedades) {
   .container {
