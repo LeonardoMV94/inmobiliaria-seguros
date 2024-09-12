@@ -13,74 +13,109 @@
 
 <body>
     <!-- NAVBAR Francisco  logo/nombre - inicio - cotizador- contacto-->
-<nav class="navbar navbar-expand-lg custom-navbar mb-4">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/logo1.jpeg" alt="Logo" class="logo-img">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cotizador.html">Cotizador</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo1.jpeg" alt="Logo" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cotizador.html">Cotizador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">
+                            Registrarse
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Formulario de Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirmar contraseña</label>
+                            <input type="password" class="form-control" id="confirm-password"
+                                placeholder="Confirma tu contraseña">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-success" form="registerForm">Registrarse</button>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+
 
     <!-- Cards -->
     <div id="body-propiedades" class="container mt-4">
-        <div id="propiedades" class="list">
-            <!-- <div class="item">
-                <div class="img">
-                    <img alt="casa" src="casa1.jpeg">
-                </div>
-                <div class="content">
-                    <div class="title">Product name 1</div>
-                    <div class="des">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Repellendus, minus.
-                    </div>
-                    <div class="price">$203.5</div>
-                    <button class="add">Cotizar</button>
-                </div>
-            </div> -->
-            
+        <div id="propiedades" class="list ">
+
+
+
         </div>
         <ul class="listPage">
-           
+
         </ul>
     </div>
 
@@ -106,101 +141,109 @@
             </div>
             <div id="carousel-propiedades" class="carousel slide" data-bs-touch="false">
                 <div class="carousel-inner">
-                
-                  <div class="carousel-item active">
-                    <div class="card ">
-                        <div class="img-wrapper">
-                            <img src="./assets/img/propiedades/f_id03.webp" class="card-img" alt="...">
+
+                    <div class="carousel-item active">
+                        <div class="card ">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/propiedades/f_id03.webp" class="card-img" alt="...">
+                            </div>
+                            <div class="card-img-overlay  text-black">
+                                <h5 class="card-title">Valparaiso</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                        <div class="card-img-overlay  text-black">
-                          <h5 class="card-title">Valparaiso</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/propiedades/f_id05.webp" class="card-img" alt="...">
+                            </div>
+                            <div class="card-img-overlay  text-black">
+                                <h2 class="card-title text-white">Valparaiso</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-                
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./assets/img/propiedades/f_id05.webp" class="card-img" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/propiedades/f_id04.webp" class="card-img" alt="...">
+                            </div>
+                            <div class="card-img-overlay  text-black">
+                                <h5 class="card-title">Valparaiso</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                        <div class="card-img-overlay  text-black">
-                          <h2 class="card-title text-white">Valparaiso</h2>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/propiedades/f_id03.webp" class="card-img" alt="...">
+                            </div>
+                            <div class="card-img-overlay  text-black">
+                                <h5 class="card-title">Valparaiso</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-                
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./assets/img/propiedades/f_id04.webp" class="card-img" alt="...">
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/propiedades/f_id01.webp" class="card-img" alt="...">
+                            </div>
+                            <div class="card-img-overlay  text-black">
+                                <h5 class="card-title">Valparaiso</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                        <div class="card-img-overlay  text-black">
-                          <h5 class="card-title">Valparaiso</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/propiedades/f_id02.webp" class="card-img" alt="...">
+                            </div>
+                            <div class="card-img-overlay  text-black">
+                                <h5 class="card-title">Valparaiso</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-                
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./assets/img/propiedades/f_id03.webp" class="card-img" alt="...">
-                        </div>
-                        <div class="card-img-overlay  text-black">
-                          <h5 class="card-title">Valparaiso</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                  </div>
-                
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./assets/img/propiedades/f_id01.webp" class="card-img" alt="...">
-                        </div>
-                        <div class="card-img-overlay  text-black">
-                          <h5 class="card-title">Valparaiso</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                  </div>
-                
-                  <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper">
-                            <img src="./assets/img/propiedades/f_id02.webp" class="card-img" alt="...">
-                        </div>
-                        <div class="card-img-overlay  text-black">
-                          <h5 class="card-title">Valparaiso</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                  </div>
-                
+                    </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
                     <i class="fa-solid fa-circle-chevron-left"></i>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
                     <i class="fa-solid fa-circle-chevron-right"></i>
-                  <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-                </div>   
-    
+            </div>
+
 
         </div>
     </section>
 
-    
+
 
     <!-- Footer -->
 <footer class="container-fluid footer-custom text-white p-4">
@@ -242,6 +285,10 @@
             </div>
         </div>
     </div>
+    <!-- Botón de subir al inicio -->
+    <button onclick="scrollToTopSimone()" class="btn btn-white btn-scroll-to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
 </footer>
 
 

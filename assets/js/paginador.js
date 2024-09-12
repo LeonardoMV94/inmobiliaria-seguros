@@ -1,11 +1,12 @@
 
 let thisPage = 1;
-let limit = 6;
+let limit = 8;
 let list;
 
 // Función para inicializar el script
-function initPagination() {
+export function initPagination() {
     list = document.querySelectorAll(".list .item");
+    console.log(list)
     loadItem();
 }
 function loadItem() {
@@ -55,4 +56,3 @@ window.changePage = function (indice) {
   loadItem();
 };
 
-document.addEventListener("DOMContentLoaded", initPagination());
