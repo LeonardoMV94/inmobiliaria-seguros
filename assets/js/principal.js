@@ -21,5 +21,6 @@ window.scrollToTopSimone = function scrollToTopSimone() {
 
 document.addEventListener('DOMContentLoaded', () => {
     generateHTML(listaPropiedades)
+    initPagination()
 })
 
