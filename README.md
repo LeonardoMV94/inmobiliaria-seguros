@@ -8,14 +8,14 @@ En este reto debe aplicar la creación de prototipos.
 
 ### Colaboradores
 
-- [ ] estilos boostrap css -> todos por cada componente
-- [ ] arreglo propiedades -> jose rejas
-- [ ] card de propiedades -> Esteban Eduardo
-- [ ] filtro de propiedades -> leo
-- [ ] maquetar carrousel de propiedades -> Nico
-- [ ] maquetar navbar -> Francisco
-- [ ] maquetar contacto -> Simone
-- [ ] maquetar footer -> Yanira
+- [x] estilos boostrap css -> todos por cada componente
+- [x] arreglo propiedades -> jose rejas
+- [x] card de propiedades -> Esteban Eduardo
+- [x] gestion -> leo
+- [x] maquetar carrousel de propiedades -> Nico
+- [x] maquetar navbar -> Francisco
+- [x] maquetar contacto -> Simone
+- [x] maquetar footer -> Yanira
 
 ### comandos para subir cambios
 ```bash
