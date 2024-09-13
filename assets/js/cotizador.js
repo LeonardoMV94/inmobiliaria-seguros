@@ -42,7 +42,7 @@ if(propiedadID == '0'){
     
                 </li>
                 <li class="list-group-item"><strong>Valor de Prima:</strong>
-                 <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.precio /1200).toFixed(2)}</p></li>
+                 <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.getPrecio() /1200).toFixed(2)}</p></li>
                 </ul>
                 <div class="d-grid gap-2">
                 <a class="btn btn-naranja-500" href="pagarSeguro.html" role="button">Comprar Seguro</a>
@@ -50,11 +50,11 @@ if(propiedadID == '0'){
             </div>`;
 
             document.getElementById('seguro_basico').addEventListener('click', function(){
-                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.precio /1200).toFixed(2)}`;
+                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /1200).toFixed(2)}`;
             });
             
             document.getElementById('seguro_completo').addEventListener('click', function(){
-                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.precio /870).toFixed(2)}`;
+                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /870).toFixed(2)}`;
             });
 }
 
