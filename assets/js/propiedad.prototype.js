@@ -10,7 +10,11 @@ function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion,
     this.region             = region, 
     this.habitaciones       = habitaciones, 
     this.banos              =  banos, 
-    this.estacionamiento    =  estacionamiento
+    this.estacionamiento    =  estacionamiento    
+}
+
+Propiedad.prototype.explotar = function() {
+    return "boom"
 }
 
 Propiedad.prototype.getId = function() {

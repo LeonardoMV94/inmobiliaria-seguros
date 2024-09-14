@@ -444,4 +444,6 @@ export const listaPropiedadesArr = [
   },
 ];
 
+
 export const listaPropiedades = listaPropiedadesArr.map(propiedad => new Propiedad(propiedad))
+

@@ -6,6 +6,7 @@ import { initPagination } from './paginador.js'
 
 // https://www.freecodecamp.org/espanol/news/prototipo-javascript-expliacado-con-ejemplos/
 
+// esto es la funcionalidad del boton para subir al principio de la pagina
 document.addEventListener('scroll', function() {
     const scrollToTopButton = document.querySelector('.btn-scroll-to-top');
     if (window.scrollY > 300) {
