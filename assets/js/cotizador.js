@@ -45,7 +45,7 @@ if(propiedadID == '0'){
                  <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.getPrecio() /1200).toFixed(2)}</p></li>
                 </ul>
                 <div class="d-grid gap-2">
-                <a class="btn btn-naranja-500" href="pagarSeguro.html" role="button">Comprar Seguro</a>
+                <a class="btn btn-naranja-500" href="seguros.html" role="button">Comprar Seguro</a>
                 </div>
             </div>`;
 
