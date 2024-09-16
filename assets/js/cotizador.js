@@ -24,7 +24,7 @@ if(propiedadID == '0'){
                 <img id="img_cotizador" src="${propiedad.getUrlImagen()}" class="card-img-top" alt="${propiedad.getComuna()}, ${propiedad.getRegion()}">
                 <div class="card-body">
                   <h5 class="card-title">${propiedad.getDireccion()}, ${propiedad.getComuna()}, ${propiedad.getRegion()}</h5>
-                  <p class="card-text"><small class="text-muted">${propiedad.getTipo()} / ${propiedad.getHabitaciones()} Hab. / ${propiedad.getBanos()} Baños</small></p>
+                  <p class="card-text"><small class="text-muted">${propiedad.getTipo()} / ${propiedad.getHabitaciones()} Hab. / ${propiedad.getBanos()} Baños / Año: ${propiedad.getAno()}</small></p>
                    <h5 class="card-title text-end">UF ${propiedad.getPrecio()}</h5>
                   <p class="card-text">${propiedad.getDescripcion()}</p>
                 </div>
@@ -50,11 +50,13 @@ if(propiedadID == '0'){
             </div>`;
 
             document.getElementById('seguro_basico').addEventListener('click', function(){
-                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /1200).toFixed(2)}`;
+                let factorAno = (2024 - propiedad.getAno())*0.09;
+                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /1200*factorAno).toFixed(2)}`;
             });
             
             document.getElementById('seguro_completo').addEventListener('click', function(){
-                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /870).toFixed(2)}`;
+                let factorAno = (2024 - propiedad.getAno())*0.09;
+                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /870*factorAno).toFixed(2)}`;
             });
 }
 

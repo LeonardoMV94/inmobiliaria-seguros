@@ -1,0 +1,174 @@
+[33mcommit a53f9f1c0f894076d2bb8b088b54e3c409b59823[m[33m ([m[1;36mHEAD -> [m[1;32mjrejasd[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 22f70ba 207a457
+Author: Leonardo Muñoz <43768317+LeonardoMV94@users.noreply.github.com>
+Date:   Wed Sep 11 21:16:20 2024 -0300
+
+    Merge pull request #6 from LeonardoMV94/rama-francisco
+    
+    Actualización del Nav
+
+[33mcommit 207a457337a63edaf786a41f83412e78dd998a72[m
+Author: Francisco Marambio Diaz <francis.joaquin1989@gmail.com>
+Date:   Wed Sep 11 20:27:54 2024 -0300
+
+    Actualizacion del Nav
+
+[33mcommit 22f70ba8ed41384992250f121268ade959298c82[m
+Merge: e06b623 49d9ea5
+Author: Leonardo Muñoz <43768317+LeonardoMV94@users.noreply.github.com>
+Date:   Wed Sep 11 19:11:05 2024 -0300
+
+    Merge pull request #5 from LeonardoMV94/nicolas-torres
+    
+    carrousel-de-propiedades
+
+[33mcommit 49d9ea5657f838fe46f8a837439df7038e5e8bf4[m
+Author: Wutangkln <nicolasignaciotorres26@gmail.com>
+Date:   Wed Sep 11 18:52:05 2024 -0300
+
+    carrousel-de-propiedades
+
+[33mcommit e06b623336429c7577df97fc62fc8a087c3c4e7b[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 01:17:13 2024 -0300
+
+    a mimir
+
+[33mcommit 90b34fafa9cc03b544c8eb9e24a22342bc8d2af7[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 01:05:12 2024 -0300
+
+    add }
+
+[33mcommit 46da41273b36f69cc45012af0b144b82bbccda4c[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 00:58:31 2024 -0300
+
+    a
+
+[33mcommit 4114bad4bf16b0223df788462aacd900c3485069[m
+Merge: 8242433 3d3e4ce
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 00:56:49 2024 -0300
+
+    merge cards pagination & simone
+
+[33mcommit 82424332ce1cc385e04e7b422f2af32ecd7ebae0[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 00:55:57 2024 -0300
+
+    paginacion de cards
+
+[33mcommit 3d3e4ce558b7cb5541e7c3613dfe061af3cb5c77[m
+Merge: d6f785b 01b3fc4
+Author: Leonardo Muñoz <43768317+LeonardoMV94@users.noreply.github.com>
+Date:   Wed Sep 11 00:50:15 2024 -0300
+
+    Merge pull request #4 from LeonardoMV94/SimoneLubones
+    
+    estilo final formulario
+
+[33mcommit 01b3fc40702d3ae8b6e5e4e9cccbf4a197902996[m
+Author: Simone R. Lubones <simone.rlubones@gmail.com>
+Date:   Wed Sep 11 00:48:05 2024 -0300
+
+    estilo final formulario
+
+[33mcommit 12ef26b388d951f768818ad48f30605b731593eb[m
+Merge: c048773 d6f785b
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 00:01:55 2024 -0300
+
+    Co-authored-by: Francisco-Marambio <Francisco-Marambio@users.noreply.github.com>
+    Co-authored-by: Wutangkln <Wutangkln@users.noreply.github.com>
+    Co-authored-by: Nicole-1993 <Nicole-1993@users.noreply.github.com>
+    Co-authored-by: Esteban <Pekazor@users.noreply.github.com>
+    Co-authored-by: jrejasd <jrejasd@users.noreply.github.com>
+
+[33mcommit c048773fd7207029aac2eb4ca34af78fccec8942[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Wed Sep 11 00:00:33 2024 -0300
+
+    propiedades
+
+[33mcommit d6f785b4f02f14d5ce8dc6fd04b0d31ad2d3c8bf[m
+Merge: 12ee1c0 7ca09fa
+Author: Leonardo Muñoz <43768317+LeonardoMV94@users.noreply.github.com>
+Date:   Tue Sep 10 23:57:41 2024 -0300
+
+    Merge pull request #3 from LeonardoMV94/SimoneLubones
+    
+    estilo al formulario
+
+[33mcommit 7ca09fa3cd915eaa8eab95177428f53997b149c2[m
+Author: Simone R. Lubones <simone.rlubones@gmail.com>
+Date:   Tue Sep 10 23:47:49 2024 -0300
+
+    estilo al formulario
+
+[33mcommit 12ee1c0a60a6c214b649062b50a75f386ae2ae50[m
+Merge: f559635 4d3ccc0
+Author: Leonardo Muñoz <43768317+LeonardoMV94@users.noreply.github.com>
+Date:   Tue Sep 10 23:22:45 2024 -0300
+
+    Merge pull request #2 from LeonardoMV94/SimoneLubones
+    
+    Simone lubones
+
+[33mcommit 4d3ccc05210d4eb703c5df9359d1fcc82cfeebcf[m
+Merge: faf2e09 f559635
+Author: Simone R. Lubones <simone.rlubones@gmail.com>
+Date:   Tue Sep 10 23:19:45 2024 -0300
+
+    Merge branch 'main' into SimoneLubones
+
+[33mcommit faf2e0998111ec9143074097e096f99830731613[m
+Author: Simone R. Lubones <simone.rlubones@gmail.com>
+Date:   Tue Sep 10 23:08:56 2024 -0300
+
+    maqueta formulario
+
+[33mcommit f559635626c9386e00b753f02b02cdb790523908[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Tue Sep 10 23:06:51 2024 -0300
+
+    add url parameters
+
+[33mcommit ba67dfec56a72618173f6ee33cfa4b70eacaafff[m
+Merge: 9407d5e de80ff8
+Author: Leonardo Muñoz <43768317+LeonardoMV94@users.noreply.github.com>
+Date:   Tue Sep 10 22:43:11 2024 -0300
+
+    Merge pull request #1 from LeonardoMV94/jrejasd
+    
+    subiendo fotos de propiedades
+
+[33mcommit de80ff866d344d9f2f77c1df3dddfb537fa3b63a[m[33m ([m[1;31morigin/jrejasd[m[33m)[m
+Author: JRejas <rejas.jose@gmail.com>
+Date:   Tue Sep 10 22:40:31 2024 -0300
+
+    subiendo fotos de propiedades
+
+[33mcommit 9407d5e9667154314b142115c9e023be2998682f[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Tue Sep 10 22:34:50 2024 -0300
+
+    add element
+
+[33mcommit 4f23f91bc75ef0992f4e5b6c2b944469af10fb89[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Tue Sep 10 22:33:57 2024 -0300
+
+    add git clone
+
+[33mcommit fb6996bd5054275c68ed3eec1b9ff5290c07ca12[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Tue Sep 10 21:13:33 2024 -0300
+
+    add readme
+
+[33mcommit dcac9867a43387332110b5b4f44d84230a7c1f26[m
+Author: Leonardo Muñoz <leonardoeleazar.mv@gmail.com>
+Date:   Tue Sep 10 20:45:26 2024 -0300
+
+    first commit

@@ -8,7 +8,8 @@ export const generateHTML2 = (propiedades) => {
                         <img alt="casa" src="${propiedad.getUrlImagen()}">
                     </div>
                     <div class="content">
-                        <div class="title">${propiedad.getTipo()}</div>
+                        <div class="title">${propiedad.getDireccion()}, ${propiedad.getComuna()}, ${propiedad.getRegion()}</div>
+                        <p class="card-text"><small class="text-muted">${propiedad.getTipo()} / Año: ${propiedad.getAno()}</small></p>
                         <div class="des">
                         ${propiedad.getDescripcion()}
                         </div>
@@ -36,7 +37,8 @@ export const generateHTML = (propiedades) => {
         <img alt="${propiedad.getTipo()}" src="${propiedad.getUrlImagen()}">
       </div>
       <div class="content">
-        <h2 class="title">${propiedad.getTipo()}</h2>
+        <h2 class="title">${propiedad.getDireccion()}, ${propiedad.getComuna()}, ${propiedad.getRegion()}</h2>
+        <p class="card-text"><small class="text-muted">${propiedad.getTipo()} / Año: ${propiedad.getAno()}</small></p>
         <p class="des">${propiedad.getDescripcion()}</p>
         <div class="price">UF ${propiedad.getPrecio().toLocaleString()}</div>
         <a href="cotizador.html?propiedad-id=${propiedad.getId()}" class="btn-cotizar">
