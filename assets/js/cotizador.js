@@ -20,6 +20,7 @@ if(propiedadID == '0'){
     
     //console.log(propiedad)
     //idTest.innerHTML = JSON.stringify(propiedad) 
+    let factorAno = (2024 - propiedad.getAno())*0.09;
     idTest.innerHTML = `<div class="card mb-3 p-4" style="width: 32rem;">
                 <img id="img_cotizador" src="${propiedad.getUrlImagen()}" class="card-img-top" alt="${propiedad.getComuna()}, ${propiedad.getRegion()}">
                 <div class="card-body">
@@ -42,7 +43,7 @@ if(propiedadID == '0'){
     
                 </li>
                 <li class="list-group-item"><strong>Valor de Prima:</strong>
-                 <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.getPrecio() /1200).toFixed(2)}</p></li>
+                 <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.getPrecio() /1200*factorAno).toFixed(2)}</p></li>
                 </ul>
                 <div class="d-grid gap-2">
                 <a class="btn btn-naranja-500" href="seguros.html" role="button">Comprar Seguro</a>
