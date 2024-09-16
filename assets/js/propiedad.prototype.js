@@ -1,4 +1,4 @@
-function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion, comuna, region, habitaciones, banos, estacionamiento}){
+function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion, comuna, region, habitaciones, banos, estacionamiento, ano}){
     this.id                 = id, 
     this.tipo               = tipo, 
     this.urlImagen          = urlImagen, 
@@ -9,8 +9,9 @@ function Propiedad({id, tipo, urlImagen, sector, descripcion, precio, direccion,
     this.comuna             = comuna, 
     this.region             = region, 
     this.habitaciones       = habitaciones, 
-    this.banos              =  banos, 
-    this.estacionamiento    =  estacionamiento    
+    this.banos              = banos, 
+    this.estacionamiento    = estacionamiento,
+    this.ano                = ano
 }
 
 Propiedad.prototype.explotar = function() {
@@ -63,6 +64,10 @@ Propiedad.prototype.getBanos = function() {
 
 Propiedad.prototype.getEstacionamiento = function() {
     return this.estacionamiento;
+};
+//agregada getAnos por Jrejas
+Propiedad.prototype.getAno = function() {
+    return this.ano;
 };
 
 export default Propiedad
