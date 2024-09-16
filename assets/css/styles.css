@@ -1,30 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 
 /*Estilo Nav*/
 
-.navbar { 
-  background-color: #924d2d; 
+.navbar {
+  background-color: #924d2d;
   padding: 15px;
-  border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo-img {
-  height: 80px; 
-  width: 80px; 
-  border-radius: 50%; 
-  margin-right: 10px; 
-  object-fit: cover; 
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
 }
 .navbar-nav .nav-item {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
-
 .social-icons .nav-link {
-  font-size: 18px; 
-  color: #f5f6fa; 
-  margin-left: 15px; 
+  font-size: 18px;
+  color: #f5f6fa;
+  margin-left: 15px;
   transition: color 0.3s ease;
 }
 
@@ -33,7 +32,7 @@
 }
 
 .navbar-brand {
-  color: black; 
+  color: black;
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
@@ -41,9 +40,8 @@
   margin-right: 30px;
 }
 
-
 .navbar-nav .nav-link {
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   font-size: 18px;
   padding: 10px 15px;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -51,17 +49,15 @@
   text-transform: capitalize;
 }
 
-
-.navbar-nav .nav-link:hover { 
+.navbar-nav .nav-link:hover {
   background-color: #5c2207;
   color: #ffffff;
-  transform: translateY(-5px);  
+  transform: translateY(-5px);
 }
 
 /* Enlace activo */
 .navbar-nav .nav-link.active {
   color: black;
-  
 }
 
 .navbar-toggler {
@@ -69,7 +65,7 @@
 }
 
 .navbar-toggler-icon {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   width: 25px;
   height: 3px;
   display: block;
@@ -77,96 +73,89 @@
   transition: background-color 0.3s ease;
 }
 
-
 .navbar-nav .btn-success {
-transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar-nav .btn-success:hover {
-transform: translateY(-5px); 
-background-color: #924d2d;
+  transform: translateY(-5px);
+  background-color: #924d2d;
 }
 
 .modal-header {
-background-color: #924d2d; 
-color: white;
+  background-color: #924d2d;
+  color: white;
 }
 
 .modal-footer .btn-success {
-background-color: #924d2d;
-transition: background-color 0.3s ease;
+  background-color: #924d2d;
+  transition: background-color 0.3s ease;
 }
 
 .modal-footer .btn-success:hover {
-background-color: #924d2d;
+  background-color: #924d2d;
 }
 
 .modal-body input {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
-
 
 /* Estilo Body */
 
 body {
-  background-color:  #ffddb5;
+  background-color: #ffddb5;
   min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-
-
 /* Estilos carrousel de propiedades */
 
-#carousel-propiedades .img-wrapper{
+#carousel-propiedades .img-wrapper {
   max-width: 100%;
   height: 17em;
 }
 
-#carousel-propiedades img{
+#carousel-propiedades img {
   max-width: 100%;
   max-height: 100%;
 }
 
-#carousel-propiedades .carousel-inner{
+#carousel-propiedades .carousel-inner {
   display: flex;
-
 }
 
 #carousel-propiedades .carousel-item {
   display: block;
   margin: 0 1.5%;
-  flex: 0 0 30%; 
+  flex: 0 0 30%;
   box-sizing: border-box;
 }
 
-#carousel-propiedades .carousel-item:hover{
+#carousel-propiedades .carousel-item:hover {
   background-color: #fff;
-  
 }
 
-#carousel-propiedades .overlay{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
-    display: flex;
-    justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
-    opacity: 0;
+#carousel-propiedades .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.8));
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
 }
-#carousel-propiedades .overlay{
+#carousel-propiedades .overlay {
   opacity: 1;
 }
 
-#carousel-propiedades .card{
-  margin: 0 .5em;
+#carousel-propiedades .card {
+  margin: 0 0.5em;
   width: 100%;
   height: 100%;
 }
@@ -176,44 +165,43 @@ body {
   line-height: 1.2;
   color: #fff;
   text-transform: uppercase;
-  margin: 0; 
+  margin: 0;
 }
 
- /* PAgina Cotizador */
+/* PAgina Cotizador */
 
- #img_cotizador {
+#img_cotizador {
   /* width: 4rem; */
   height: auto; /* Corregido */
-  text-shadow: 2px 2px rgba(51, 51, 51, .25);
+  text-shadow: 2px 2px rgba(51, 51, 51, 0.25);
 }
 
-
-#carousel-propiedades .card-img-overlay h5{
+#carousel-propiedades .card-img-overlay h5 {
   display: block;
-} 
-
-#carousel-propiedades .card-img-overlay p{
-  display: none;
-} 
-
-#carousel-propiedades button .fa-circle-chevron-right{
- color: black;
-position: absolute;
- left: 200px;
 }
 
-#carousel-propiedades button .fa-circle-chevron-left{
+#carousel-propiedades .card-img-overlay p {
+  display: none;
+}
+
+#carousel-propiedades button .fa-circle-chevron-right {
+  color: black;
+  position: absolute;
+  left: 200px;
+}
+
+#carousel-propiedades button .fa-circle-chevron-left {
   color: black;
   position: absolute;
   right: 200px;
- }
+}
 
-.cont-carousel{
+.cont-carousel {
   margin-bottom: 20px;
 }
 
-.cont-carousel span{
-  font-family: 'La Belle Aurore', cursive;
+.cont-carousel span {
+  font-family: "La Belle Aurore", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 62px;
@@ -223,12 +211,12 @@ position: absolute;
 
 /* desde aca comienza las propiedades de las card */
 @scope (#body-propiedades) {
-   body {
-    background-image: linear-gradient(to top right, #cc64a2, #5c3075); 
+  body {
+    background-image: linear-gradient(to top right, #cc64a2, #5c3075);
     min-height: 100vh;
     line-height: 20px;
     font-family: monospace;
-  } 
+  }
   .container {
     width: 100%;
     max-width: 1200px;
@@ -246,7 +234,7 @@ position: absolute;
     background-color: #fff;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
   }
   .item:hover {
@@ -340,7 +328,6 @@ position: absolute;
   }
 }
 
-
 /*Formulario*/
 
 .formulario {
@@ -351,7 +338,6 @@ position: absolute;
   max-width: 800px;
   margin: 0 auto;
 }
-
 
 /* Footer */
 
@@ -397,4 +383,156 @@ position: absolute;
   background-color: #633018;
   border-color: #633018;
   color: #fff;
+}
+
+/* <----Cotizador-imagenes---> */
+/* .fondo {
+  background-image: url(../img/hogar.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}  */
+
+
+.image{
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  justify-items: center;
+  /* width: 600px;
+  height: 900px; */
+}
+
+
+/* image{
+  flex-wrap: wrap;
+  height: 1200px;;
+  width: 600;
+  margin-top: 6%;
+  border-radius: 15px;
+  
+  transition: flex 0.5s ease;
+  cursor: pointer;
+  justify-items: center;
+} */
+/* .image:hover{
+  flex:3;
+}  */
+
+/* <-------contrato------> */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+}
+.contract-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffdeb5;
+}
+.contract-scroll {
+  width: 100%;
+  max-width: 800px;
+  height: 60vh;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.contract-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.contract-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.contract-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.contract-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.contract-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #0779e4;
+}
+.contract-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contract-section h2 {
+  color: #0779e4;
+}
+ul {
+  padding-left: 20px;
+}
+.warning-text {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.accept-button {
+  background-color: #4CAF50;
+  color: white;
+}
+.accept-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+.reject-button {
+  background-color: #f44336;
+  color: white;
+}
+.reject-button:hover:not(:disabled) {
+  background-color: #da190b;
+}
+
+/* <-----webpayment----> */
+.payment-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
 }
