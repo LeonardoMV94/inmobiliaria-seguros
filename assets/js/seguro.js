@@ -1,3 +1,6 @@
+let params = new URLSearchParams(window.location.search);
+let valor_p = params.get("valor");
+
 function checkboxes(){
     const triggerBottom = window.innerHeight / 5 * 4;
     boxes.forEach((box, idx) => {
@@ -39,7 +42,7 @@ contractScroll.addEventListener('scroll', checkSections);
 checkSections(); 
 
 acceptButton.addEventListener('click', () => {
-    window.location.href = 'webpay.html';
+    window.location.href = `webpay.html?valor=${valor_p}`;
     alert('Has aceptado los términos y condiciones.');
 });
 
