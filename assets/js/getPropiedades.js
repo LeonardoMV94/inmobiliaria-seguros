@@ -1,6 +1,7 @@
-import { propiedadesElement } from "./elementsDOM.js";
+import Propiedad from "./propiedad.prototype.js";
 
-export const listaPropiedades = [
+
+export const listaPropiedadesArr = [
   {
     id: "1",
     tipo: "Departamento",
@@ -443,29 +444,6 @@ export const listaPropiedades = [
   },
 ];
 
-export const generateHTML = (propiedades) => {
 
-  listaPropiedades.forEach((propiedad, index) => {
-    const template = `
-                  <div class="item">
-                    <div class="img">
-                        <img alt="casa" src="${propiedad.urlImagen}">
-                    </div>
-                    <div class="content">
-                        <div class="title">${propiedad.tipo}</div>
-                        <div class="des">
-                        ${propiedad.descripcion}
-                        </div>
-                        <div class="price">UF ${propiedad.precio}</div>
-                        <a href="cotizador.html?propiedad-id=${propiedad.id}">
-                          <button class="add">
-                            Cotizador
-                          </button>
-                        </a>
-                    </div>
-                  `;
-    propiedadesElement.innerHTML += template
-  });
-};
-
+export const listaPropiedades = listaPropiedadesArr.map(propiedad => new Propiedad(propiedad))
 

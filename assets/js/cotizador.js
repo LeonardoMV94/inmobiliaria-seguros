@@ -1,8 +1,11 @@
 import { idTest } from "./elementsDOM.js";
-import { listaPropiedades } from "./propiedad.js";
+import { listaPropiedades } from "./getPropiedades.js";
+
+
 let params = new URLSearchParams(window.location.search);
 let propiedadID = params.get("propiedad-id");
 propiedadID ??= '0';
+
 //let propiedadID = '13';
 
 if(propiedadID == '0'){
@@ -18,12 +21,12 @@ if(propiedadID == '0'){
     //console.log(propiedad)
     //idTest.innerHTML = JSON.stringify(propiedad) 
     idTest.innerHTML = `<div class="card mb-3 p-4" style="width: 32rem;">
-                <img id="img_cotizador" src="${propiedad.urlImagen}" class="card-img-top" alt="${propiedad.comuna}, ${propiedad.region}">
+                <img id="img_cotizador" src="${propiedad.getUrlImagen()}" class="card-img-top" alt="${propiedad.getComuna()}, ${propiedad.getRegion()}">
                 <div class="card-body">
-                  <h5 class="card-title">${propiedad.direccion}, ${propiedad.comuna}, ${propiedad.region}</h5>
-                  <p class="card-text"><small class="text-muted">${propiedad.tipo} / ${propiedad.habitaciones} Hab. / ${propiedad.banos} Baños</small></p>
-                   <h5 class="card-title text-end">UF ${propiedad.precio}</h5>
-                  <p class="card-text">${propiedad.descripcion}</p>
+                  <h5 class="card-title">${propiedad.getDireccion()}, ${propiedad.getComuna()}, ${propiedad.getRegion()}</h5>
+                  <p class="card-text"><small class="text-muted">${propiedad.getTipo()} / ${propiedad.getHabitaciones()} Hab. / ${propiedad.getBanos()} Baños</small></p>
+                   <h5 class="card-title text-end">UF ${propiedad.getPrecio()}</h5>
+                  <p class="card-text">${propiedad.getDescripcion()}</p>
                 </div>
                 <ul class="list-group list-group-flush">
                  <li class="list-group-item "><strong>Seleccione Tipo de Seguro</strong></li>
@@ -39,19 +42,19 @@ if(propiedadID == '0'){
     
                 </li>
                 <li class="list-group-item"><strong>Valor de Prima:</strong>
-                 <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.precio /1200).toFixed(2)}</p></li>
+                 <p class="fs-4 text-end text-success" id="valor_prima">UF ${(propiedad.getPrecio() /1200).toFixed(2)}</p></li>
                 </ul>
                 <div class="d-grid gap-2">
-                <a class="btn btn-naranja-500" href="pagarSeguro.html" role="button">Comprar Seguro</a>
+                <a class="btn btn-naranja-500" href="seguros.html" role="button">Comprar Seguro</a>
                 </div>
             </div>`;
 
             document.getElementById('seguro_basico').addEventListener('click', function(){
-                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.precio /1200).toFixed(2)}`;
+                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /1200).toFixed(2)}`;
             });
             
             document.getElementById('seguro_completo').addEventListener('click', function(){
-                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.precio /870).toFixed(2)}`;
+                document.getElementById('valor_prima').innerHTML = `UF ${(propiedad.getPrecio() /870).toFixed(2)}`;
             });
 }
 
